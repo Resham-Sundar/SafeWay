@@ -46,7 +46,9 @@ Note : Other parameters have been passed in the script itself.
 ## :dizzy: References
 
 Dataset : [RTK Dataset](https://lapix.ufsc.br/pesquisas/projeto-veiculo-autonomo/datasets/?lang=en)
+
 Jetson Inference : [Segnet](https://github.com/dusty-nv/jetson-inference/tree/master/examples/segnet)
+
 PyTorch Segmentation : [Training code](https://github.com/Onixaz/pytorch-segmentation)
 
 ## :fireworks: Extras
