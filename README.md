@@ -30,17 +30,16 @@ Note : Other parameters have been passed in the script itself.
 
 <ol>
     <li>The dataset used is the RTK Dataset and it can be downloaded from <a href="https://lapix.ufsc.br/pesquisas/projeto-veiculo-autonomo/datasets/?lang=en">here</a> </li>
-    <li>Next we clone this <a href="https://github.com/Onixaz/pytorch-segmentation">repo</a>, create a environment and install the requirements</li>
+    <li>Next we clone this <a href="https://github.com/Resham-Sundar/SafeWay">repo</a>, create a environment and install the requirements</li>
     <li>Further install these - torch, torchvision, pycocotools and onnx</li>
-    <li>Next, we split the dataset into traning and validation images and masks. Then we run python split_custom.py --masks="path/to/your/SegmentationClass" --images="path/to/your/JPEGImages" --output="path/to/your/output/dir".</li>
+    <li>Next, we go inside training folder and split the dataset into traning and validation images and masks by running <b>python split_custom.py --masks="path/to/your/SegmentationClass" --images="path/to/your/JPEGImages" --output="path/to/your/output/dir"</b>.</li>
     <li>We then create the files named classes.txt and colors.txt. The classes.txt contains names of the classes and the colors.txt contains the R,G,B values of the corresponding classes.</li>
-    <li>Run this to train : python train.py /path/to/your/split/data --dataset=custom</li>
+    <li>Run this to train : <b>python train.py /path/to/your/split/data --dataset=custom</b></li>
     <li>After training is finished, we get a file named model_best.pth. We know that the jetson-inference library runs TensorRT and we'll use it further. Convert the model to Onnx before taking it to the Nano</li>
-    <li>Run : python onnx_export.py</li>
+    <li>Run : <b>python onnx_export.py</b></li>
     <li>Move fcn_resnet18.onnx ,classes.txt and colors.txt to the Jetson device.</li>
     <li>In the Jetson, clone the <a href="https://github.com/dusty-nv/jetson-inference">jetson-inference repository</a> and move above three files to to jetson-inference/python/examples.</li>
-    <li>Now run segnet.py file for the inference. This create a TensorRT engine itself which is then used for the inferene</li>
-    <li>Command : python3 segnet.py --input_URI input.mp4 --model=fcn_resnet18.onnx --width=352 --height=288 --labels=classes.txt --colors=colors.txt --input_blob="input_0" --output_blob="output_0"</li>
+    
 </ol>
 
 ## :dizzy: References
