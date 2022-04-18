@@ -11,6 +11,11 @@ In the case of an accident, this segmented data can be utilized to understand th
 
 ## :framed_picture: Demo
 
+
+https://user-images.githubusercontent.com/39203466/163759582-6ba6ce39-9856-4e33-8397-aea84ea68080.mp4
+
+Same video is available on YouTube too! Watch it [here](https://www.youtube.com/watch?v=yXEIZMEm_uY).
+
 ## :hammer_and_wrench: Steps to run this repo
 
 <ol>
