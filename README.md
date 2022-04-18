@@ -19,7 +19,7 @@ Same video is available on YouTube too! Watch it [here](https://www.youtube.com/
 ## :hammer_and_wrench: Steps to run this repo
 
 <ol>
-    <li>Clone this repo</li>
+    <li>Clone this <a href="https://github.com/Resham-Sundar/SafeWay">repo</a></li>
     <li>Make sure you have <a href="https://github.com/dusty-nv/jetson-inference">this</a> repo setup and is running.</li>
     <li>Move to safeway_inference</li>
     <li>Download my trained weight file from <a href="https://drive.google.com/file/d/1FcWa_sNwL2Jg19GL97ja_LKWbzQ3_L9Q/view?usp=sharing">here</a></li>
@@ -35,18 +35,18 @@ Note : Other parameters have been passed in the script itself.
     <li>Further install these - torch, torchvision, pycocotools and onnx</li>
     <li>Next, we go inside training folder and split the dataset into traning and validation images and masks by running <b>python split_custom.py --masks="path/to/your/SegmentationClass" --images="path/to/your/JPEGImages" --output="path/to/your/output/dir"</b>.</li>
     <li>We then create the files named classes.txt and colors.txt. The classes.txt contains names of the classes and the colors.txt contains the R,G,B values of the corresponding classes.</li>
-    <li>Run this to train : <b>python train.py /path/to/your/split/data --dataset=custom</b></li>
+    <li>Run this to train : <b>python train.py /path/to/your/split/data --dataset=custom --classes=13 --epochs=100</b></li>
     <li>After training is finished, we get a file named model_best.pth. We know that the jetson-inference library runs TensorRT and we'll use it further. Convert the model to Onnx before taking it to the Nano</li>
     <li>Run : <b>python onnx_export.py</b></li>
     <li>Move fcn_resnet18.onnx ,classes.txt and colors.txt to the Jetson device.</li>
-    <li>In the Jetson, clone the <a href="https://github.com/dusty-nv/jetson-inference">jetson-inference repository</a> and move above three files to to jetson-inference/python/examples.</li> 
+    <li>From here on, follow the steps mentioned under "Steps to run this repo" and replace the onnx model, classes.txt and colors.txt inside safeway_inference with your files.
 </ol>
 
 ## :dizzy: References
 <ul>
     <li>Dataset : <a href="https://lapix.ufsc.br/pesquisas/projeto-veiculo-autonomo/datasets/?lang=en">RTK Dataset</a></li>
-    <li>Jetson Inference : [Segnet](https://github.com/dusty-nv/jetson-inference/tree/master/examples/segnet)</li>
-    <li>PyTorch Segmentation : [Training code](https://github.com/Onixaz/pytorch-segmentation)</li>
+    <li>Jetson Inference : <a href="https://github.com/dusty-nv/jetson-inference/tree/master/examples/segnet">Segnet</a></li>
+    <li>PyTorch Segmentation : <a href="https://github.com/Onixaz/pytorch-segmentation">Training code</a></li>
 </ul>
 
 ## :fireworks: Extras
