@@ -15,18 +15,18 @@ https://user-images.githubusercontent.com/39203466/163759582-6ba6ce39-9856-4e33-
 
 Same video is available on YouTube too! Watch it [here](https://www.youtube.com/watch?v=yXEIZMEm_uY).
 
-## :hammer_and_wrench: Steps to run this repo
+## :hammer_and_wrench: Steps for Inference
 
 <ol>
     <li>Clone the repo</li>
     <li>Move to safeway_inference</li>
     <li>Make sure you have <a href="https://github.com/dusty-nv/jetson-inference">this</a> repo setup and is running.</li>
     <li>Download my trained weight file from <a href="https://drive.google.com/file/d/1FcWa_sNwL2Jg19GL97ja_LKWbzQ3_L9Q/view?usp=sharing">here</a></li>
-    <li>Run : python3 safeway_v1.py --model=road_type_ss.onnx --input_URI path_to_input_video --output_URI output.mp4 </li>
+    <li>Run : <b>python3 safeway_v1.py --model=road_type_ss.onnx --input_URI path_to_input_video --output_URI output.mp4 </b></li>
 </ol>
 Note : Other parameters have been passed in the script itself.         
 
-## :hammer_and_wrench: End to End steps followed:
+## :hammer_and_wrench: Steps for Training:
 
 <ol>
     <li>The dataset used is the RTK Dataset and it can be downloaded from <a href="https://lapix.ufsc.br/pesquisas/projeto-veiculo-autonomo/datasets/?lang=en">here</a> </li>
@@ -43,12 +43,11 @@ Note : Other parameters have been passed in the script itself.
 </ol>
 
 ## :dizzy: References
-
-Dataset : [RTK Dataset](https://lapix.ufsc.br/pesquisas/projeto-veiculo-autonomo/datasets/?lang=en)
-
-Jetson Inference : [Segnet](https://github.com/dusty-nv/jetson-inference/tree/master/examples/segnet)
-
-PyTorch Segmentation : [Training code](https://github.com/Onixaz/pytorch-segmentation)
+<ul>
+    <li>Dataset : [RTK Dataset](https://lapix.ufsc.br/pesquisas/projeto-veiculo-autonomo/datasets/?lang=en)</li>
+    <li>Jetson Inference : [Segnet](https://github.com/dusty-nv/jetson-inference/tree/master/examples/segnet)</li>
+    <li>PyTorch Segmentation : [Training code](https://github.com/Onixaz/pytorch-segmentation)</li>
+</ul>
 
 ## :fireworks: Extras
 
