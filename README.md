@@ -24,7 +24,7 @@ Same video is available on YouTube too! Watch it [here](https://www.youtube.com/
     <li>Download my trained weight file from <a href="https://drive.google.com/file/d/1FcWa_sNwL2Jg19GL97ja_LKWbzQ3_L9Q/view?usp=sharing">here</a></li>
     <li>Run : python3 safeway_v1.py --model=road_type_ss.onnx --input_URI path_to_input_video --output_URI output.mp4 </li>
 </ol>
-Note : Other parameters have been hardcoded in the script.         
+Note : Other parameters have been passed in the script itself.         
 
 ## :hammer_and_wrench: End to End steps followed:
 
