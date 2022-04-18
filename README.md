@@ -1,6 +1,7 @@
 <h1 align="center">SafeWay</h1>
 
 ## :star: Introduction and Use case
+Make way for SafeWay!!
 This application is a video analytics pipeline powered by Nvidia's Jetson Nano and TensorRT. It is useful for those who work day in and day out for the safety of roads which are used by us and hence reduce the risk of accidents.<br><br> 
 Poor driving areas are caused by a combination of seasonal and traffic conditions. Maintaining these areas are a must since they cause enormous hazard to drivers and may lead to fatal accidents. One of the reason for accidents are the condition of the roads too! <br>
 This application helps in segmenting the different kinds of roads such as Paved Road, Unpaved Road, Asphalt Road, Road Marking, potholes, etc. Nowadays we have cameras on all the new cars, facing the road in the front for assisted driving. When images are collected of the road for assisted driving, this application can be simultaneously used to segment areas or parts of the road that are hazardous for the driver. This information can then be passed on to the local body to notify them about the bad condition of the road along with relevant details.<br>
