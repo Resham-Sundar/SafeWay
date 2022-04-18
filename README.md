@@ -44,7 +44,7 @@ Note : Other parameters have been passed in the script itself.
 
 ## :dizzy: References
 <ul>
-    <li>Dataset : [RTK Dataset](https://lapix.ufsc.br/pesquisas/projeto-veiculo-autonomo/datasets/?lang=en)</li>
+    <li>Dataset : <a href="https://lapix.ufsc.br/pesquisas/projeto-veiculo-autonomo/datasets/?lang=en">RTK Dataset</li>
     <li>Jetson Inference : [Segnet](https://github.com/dusty-nv/jetson-inference/tree/master/examples/segnet)</li>
     <li>PyTorch Segmentation : [Training code](https://github.com/Onixaz/pytorch-segmentation)</li>
 </ul>
