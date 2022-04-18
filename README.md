@@ -1,10 +1,10 @@
 <h1 align="center">SafeWay</h1>
 
 ## :star: Introduction and Use case
-This application is a video analytics pipeline powered by Nvidia's Jetson Nano and TensorRT. It is useful for those who work day in and day out for the safety of roads which are used by us and hence reduce the risk of accidents.<br> 
+This application is a video analytics pipeline powered by Nvidia's Jetson Nano and TensorRT. It is useful for those who work day in and day out for the safety of roads which are used by us and hence reduce the risk of accidents.<br><br> 
 Poor driving areas are caused by a combination of seasonal and traffic conditions. Maintaining these areas are a must since they cause enormous hazard to drivers and may lead to fatal accidents. One of the reason for accidents are the condition of the roads too! <br>
 This application helps in segmenting the different kinds of roads such as Paved Road, Unpaved Road, Asphalt Road, Road Marking, potholes, etc. Nowadays we have cameras on all the new cars, facing the road in the front for assisted driving. When images are collected of the road for assisted driving, this application can be simultaneously used to segment areas or parts of the road that are hazardous for the driver. This information can then be passed on to the local body to notify them about the bad condition of the road along with relevant details.<br>
-Also, this application can be used by a car to notify other cars behind itself about the condition of the road ahead so that either they can take another route or drive with caution. This can be achieved by V2V or V2X communication systems.<br>
+Also, this application can be used by a car to notify other cars behind itself about the condition of the road ahead so that either they can take another route or drive with caution. This can be achieved by V2V or V2X communication systems.<br><br> 
 This type of segmented data would not compulsorily be monetized but can be collect in a crowd sourced manner that means anyone with such technology in their car can collect the data and this data can then be initiated to a government body, free of cost for people's safety.
 This application can also detect lane markings hence helping local body to mark lanes if absent.<br>
 In the case of an accident, this segmented data can be utilized to understand the type of road where accidents take place, whether is it paved or unpaved or asphalt.
